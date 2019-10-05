@@ -22,17 +22,14 @@ justice_Citation <- read_xlsx("raw-data/SCDB_2019_01_justiceCentered_Citation.xl
 justice_LegalProvision <- read_xlsx("raw-data/SCDB_2019_01_justiceCentered_LegalProvision.xlsx") %>% 
   clean_names()
 
-# I loaded in 3 Excel sheets of data from the Supreme Court.
-```
+# I loaded in 3 Excel sheets of data from the Supreme Court. I then called glimpse() on each of them in console.
 ```
 
-```{r initial viewing of data}
+The data I have loaded are 3 Excel sheets of "justice centered" data about Supreme Court justices. I got this data from the Supeme Court database (http://scdb.wustl.edu/data.php). "Justice centered" data is data in which there is a row for each justice that has participated in the dispute. For each dispute, there is identifying information such as the Case ID, Docket ID, the type of decision, etc. I am interested in seeing either how the demographics of the Supreme Court justices have changed over time, or how their demographics have affected the way they vote. For more information about the demographics of the justices, I am planning on maybe pulling data from this paper: https://fas.org/sgp/crs/misc/R40802.pdf. 
 
-glimpse(justice_Docket)
-glimpse(justice_Citation)
-glimpse(justice_LegalProvision)
+So far, I have attempted to glimpse at the data and do other initial viewing techniques to get a better idea of what my data offers. What I plan to do next is sharpen my research question, because there is a lot of data here, and start playing around with the data - maybe plotting some factor about the justices' backgrounds alongside the justices' voting patterns, etc. In order to sharpen my research question, I think I need to continue to spend time looking for possible interesting relationships in the data. 
 
-```
+
 
 
 
