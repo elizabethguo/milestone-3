@@ -1,0 +1,38 @@
+---
+title: "Milestone 3"
+author: "Elizabeth Guo"
+date: "10/4/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(readxl)
+library(tidyverse)
+library(janitor)
+```
+
+```{r load in data}
+justice_Docket <- read_xlsx("raw-data/SCDB_2019_01_justiceCentered_Docket.xlsx") %>% 
+  clean_names()
+
+justice_Citation <- read_xlsx("raw-data/SCDB_2019_01_justiceCentered_Citation.xlsx") %>% 
+  clean_names()
+
+justice_LegalProvision <- read_xlsx("raw-data/SCDB_2019_01_justiceCentered_LegalProvision.xlsx") %>% 
+  clean_names()
+
+# I loaded in 3 Excel sheets of data from the Supreme Court.
+```
+```
+
+```{r initial viewing of data}
+
+glimpse(justice_Docket)
+glimpse(justice_Citation)
+glimpse(justice_LegalProvision)
+
+```
+
+
+
